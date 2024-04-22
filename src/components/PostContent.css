@@ -1,0 +1,120 @@
+/* PostContent.css */
+
+.upload-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: none;
+  /*  border: 1px solid #ddd;/
+    border-radius: 5px;
+    /*background-color: #fff;*/
+  /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+  }
+  
+  .post-form {
+    padding: 20px;
+    background: none;
+    
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    
+  }
+
+  .create-post-button {
+    background: none;
+    border: 1px solid black; /* Remove border */
+    color: black; /* White text color */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it inline block */
+    font-size: 16px; /* Font size */
+    margin-top: 20px; /* Add some top margin */
+    cursor: pointer; /* Add cursor pointer on hover */
+    border-radius: 5px; /* Add border radius */
+    transition: all 0.3s ease;
+
+  }
+  
+  .create-post-button:hover {
+    background-color: black; /* Darker green on hover */
+    color: white; 
+  }
+  
+  .form-group input[type="text"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+
+  
+  .form-group label {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    cursor: pointer;
+    display: block;
+    /*background-color: #fff;*/
+    color: #333;
+    background: none;
+    
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .submit-button {
+    background-color: grey;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .submit-button:hover {
+    background-color: darkgray;
+  }
+  
+  .posted-content {
+    margin-top: 20px;
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .post h2 {
+    margin-bottom: 10px;
+  }
+  
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .photos img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  

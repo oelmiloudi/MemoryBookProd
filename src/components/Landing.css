@@ -1,0 +1,91 @@
+/* Landing.css */
+/* Updated Landing.css to match the style of App.css */
+body {
+    background-color: #fff; /* Light background color */
+    color: #333; /* Subtle, readable text color */
+    font-family: 'Arial', sans-serif; /* Consistent font family */
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  p {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  nav {
+    text-align: center;
+    background-color: #fff; /* Background color for nav bar */
+    padding: 20px 40px; /* Consistent padding with App.css */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  nav a {
+    display: inline-block; /* Instead of block for inline arrangement */
+    margin: 0 10px; /* Spacing between links */
+    font-size: 20px;
+    color: #333; /* Dark grey for better readability */
+    text-decoration: none;
+    border: none; /* Removing border for a cleaner look */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #f1f1f1; /* Light grey background on hover */
+    color: #0056b3; /* Theme color for hover state */
+  }
+  
+  .content-posts {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light grey background for contrast */
+    border-radius: 5px; /* Rounded corners for soft appearance */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Consistent shadow effect */
+  }
+  
+  .content-posts li {
+    background-color: #fff; /* White background for each post */
+    border: 1px solid #ddd; /* Subtle border for definition */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px; /* Consistent rounded corners */
+  }
+  
+  .post-photos img {
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+  }
+  
+  .delete-post, .delete-photo {
+    background-color: #007bff; /* Primary button color */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-post:hover, .delete-photo:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .photo-view-modal {
+    background-color: rgba(0, 0, 0, 0.8); /* Dim background for modal */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

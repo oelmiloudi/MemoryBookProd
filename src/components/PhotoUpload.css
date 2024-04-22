@@ -1,0 +1,216 @@
+/* PhotoUpload.css */
+
+.upload-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .custom-file-button {
+    background-color: #ebcf63; /* Match color theme */
+    color: black; /* Contrast color for text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-file-button:hover {
+    background-color: #c9ad33; /* Darker shade on hover */
+  }
+  
+  .submit-button {
+    background-color: #ebcf63; /* Match color theme */
+    color: black; /* Contrast color for text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .submit-button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+  
+  .submit-button:hover {
+    background-color: #c9ad33; /* Darker shade on hover */
+  }
+  
+  .photo-container {
+    position: relative; /* Positioning for the delete button */
+    display: inline-flex; /* Make it an inline flex container */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Add margin for spacing */
+    width: 150px; /* Adjust as needed */
+    height: auto;
+  }
+  .photo-container .delete-button {
+    background-color: #ebcf63; /* Match color theme */
+    color: black; /* Contrast color for text */
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    position: absolute; /* Position the delete button */
+    top: 5px; /* Adjust top position */
+    right: 5px; /* Adjust right position */
+  }
+  
+  .photo-container:hover .delete-button {
+    display: block; /* Show delete button on hover */
+  }
+  
+  .photo-container .delete-button:hover {
+    background-color: #c9ad33; /* Darker shade on hover */
+  }
+  
+  .photo-view-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure modal is on top of other content */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    background-color: #ebcf63; /* Invert the background color */
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .photo-container {
+    position: relative;
+  }
+  
+  .viewed-photo {
+    max-width: 80vh;
+    max-height: 80vh;
+    display: block;
+    margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    background-color: #ebcf63; /* Invert the background color */
+    border: 2px solid #000;
+    border-radius: 5px;
+  }
+  
+  .prev-button {
+    left: calc(50% - 45vh);
+  }
+  
+  .next-button {
+    right: calc(50% - 45vh);
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    opacity: 0.8;
+  }
+  .uploaded-photo {
+    width: calc(90% ); /* Adjust as needed to fit three photos per row */
+    height: auto;
+    margin: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+  
+  .selected-photos {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+    width: 75%; /* Cover 75% of the screen */
+    margin: 0 auto; /* Center the list */
+  }
+  
+  .delete-button {
+    background-color: #ebcf63; /* Match color theme */
+    color: black; /* Contrast color for text */
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    position: absolute; /* Position the delete button */
+    top: 5px; /* Adjust top position */
+    right: 5px; /* Adjust right position */
+    display: none; /* Hide delete button by default */
+  }
+  
+  .delete-button:hover {
+    background-color: #c9ad33; /* Darker shade on hover */
+  }
+  
+  .selected-photos li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 10px 0; /* Adjust margin for spacing */
+    border: 2px solid #000; /* Invert the border color */
+    border-radius: 5px; /* Add border radius */
+    padding: 8px; /* Add padding for better spacing */
+    min-width: 150px; /* Ensure each item has minimum width */
+    max-width: 250px; /* Limit maximum width for better layout */
+    position: relative; /* Positioning for the delete button */
+    background-color: #ebcf63; /* Invert the background color */
+    color: #000; /* Invert the text color */
+  }
+  
+  .selected-photos li:hover .delete-button {
+    display: block; /* Show delete button on hover */
+  }
+  
+  .selected-photos li button {
+    background-color: #ebcf63; /* Match color theme */
+    color: black; /* Contrast color for text */
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    margin-left: auto; /* Align delete button to the right */
+    display: none; /* Hide delete button by default */
+    position: absolute; /* Position the delete button */
+    top: 5px; /* Adjust top position */
+    right: 5px; /* Adjust right position */
+  }
+  
+  .selected-photos li button:hover {
+    background-color: #c9ad33; /* Darker shade on hover */
+  }

@@ -1,0 +1,174 @@
+/* src/Homepage.css */
+
+.homepage {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 2.2em; /* Increase size of the brand logo */
+    color: #333;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Create uniform space between nav items */
+  }
+  
+  .nav-links a,
+  .nav-links div {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links div:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .search-bar {
+    padding: 8px 15px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .nav-button.my-profile {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .nav-button.my-profile:hover {
+    background-color: #444;
+  }
+  
+  .search-container {
+    position: relative;
+    flex-grow: 1; /* Allow the search container to fill the space */
+    margin: 0 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .search-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background: #0056b3;
+  }
+  /* Additional styles remain the same */
+  
+  
+  .main-content .hero-section {
+    background: url("Photos/Photographer.jpg");
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: left;
+  }
+  
+  
+  .main-content .hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .main-content .hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .main-content .hero-section .cta-button {
+    padding: 15px 30px;
+    font-size: 1em;
+    color: #333;
+    background: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .main-content .hero-section .cta-button:hover {
+    background: #e6e6e6;
+  }
+  
+  /* Footer styles */
+  .site-footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add some padding */
+  }
+  
+  .site-footer .container {
+    max-width: 1170px; /* Max width of the content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add some padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the child elements */
+    align-items: center; /* Vertically center align items */
+  }
+  
+  .site-footer .contact-info, .site-footer .tech-support {
+    margin: 10px 0; /* Margin for spacing */
+  }
+  
+  .site-footer a {
+    color: #f7c948; /* Color for links for visibility */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .site-footer a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+  }

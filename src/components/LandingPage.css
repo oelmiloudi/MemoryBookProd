@@ -1,0 +1,133 @@
+/* LandingPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Use the full screen height */
+    justify-content: flex-start; /* Align content to the top */
+    padding-top: 50px; /* Add some padding to the top */
+  }
+  
+.landing-header {
+    text-align: center;
+    margin-bottom: 10px; /* Add space between the header and the auth form */
+  }
+
+.auth-form {
+    background: #fff;
+    padding: 100px; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Increased max width */
+  }
+
+.auth-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take full width to center horizontally */
+    flex-grow: 1; /* Fill available space */
+  }
+
+.auth-form-header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.auth-form-header button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: #020304;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.auth-form-header button.active {
+  border-color: #000203;
+}
+
+.form-group {
+    margin-bottom: 80px; /* Increase space between inputs if necessary */
+  }
+  
+.input-text {
+    width: 100%;
+    padding: 60px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 1rem; /* Increase font size if necessary */
+  }
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  padding: 15px; /* Increased padding */
+  font-size: 1.1rem; /* Increase font size if necessary */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.auth-toggle {
+  text-align: center;
+  color: #0077cc;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+/* Header styles */
+.site-header {
+    text-align: center;
+    color: #333; /* Choose a color that fits your design */
+    padding-top: 20px;
+  }
+  
+  .site-header .main-title {
+    font-size: 2.5rem; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space between the main title and the slogan */
+  }
+  
+  .site-header .slogan {
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: #555; /* Slightly lighter color for the slogan */
+  }
+  
+  /* Photo styles */
+  .photo-banner {
+    background: url('Photos/Photographer.jpg') repeat-x center center;
+    background-size: contain; /* This will ensure the image is not scaled */
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+  }
+
+.header-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header-center.slogan {
+    font-size: smaller;
+}
